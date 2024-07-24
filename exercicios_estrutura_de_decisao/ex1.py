@@ -18,7 +18,6 @@ while continua_ou_para:
                 print(error)
                 
         
-
         while True:
             try:
                 print()
@@ -52,9 +51,9 @@ while continua_ou_para:
         continua_ou_para = input('Para continuar digite [C] ou [S] para sair: ').strip().lower()
         
         if continua_ou_para == 'c':
-            break  # Sai do loop de opções e reinicia o ciclo
+            break  
         elif continua_ou_para == 's':
-            continua_ou_para = False  # Para o loop principal
+            continua_ou_para = False  
             print('Saindo do programa.')
             break
         else:

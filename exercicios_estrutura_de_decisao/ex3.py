@@ -8,17 +8,16 @@ continua_ou_para = True
 while continua_ou_para:
     try:
         print()
-        
-        # Loop interno para garantir uma entrada de sexo válida
+                
         while True:
             sexo = input('Informe o sexo, [M] para masculino e [F] para feminino: ')
             
             if str.lower(sexo) == 'm':
                 print('O sexo informado é Masculino.')
-                break  # Sai do loop interno se a entrada for válida
+                break  
             elif str.lower(sexo) == 'f':
                 print('O sexo informado é Feminino.')
-                break  # Sai do loop interno se a entrada for válida
+                break  #
             else:
                 print('Sexo inválido. Por favor, informe [M] para Masculino ou [F] para Feminino.')
 
@@ -28,14 +27,14 @@ while continua_ou_para:
 
     print()
     
-    # Loop para garantir uma entrada válida para continuar ou sair
+    
     while True:
         continua_ou_para = input('Para continuar digite [C] ou [S] para sair: ').strip().lower()
         
         if continua_ou_para == 'c':
-            break  # Sai do loop de opções e reinicia o ciclo
+            break  
         elif continua_ou_para == 's':
-            continua_ou_para = False  # Para o loop principal
+            continua_ou_para = False  
             print('Saindo do programa.')
             break
         else:
