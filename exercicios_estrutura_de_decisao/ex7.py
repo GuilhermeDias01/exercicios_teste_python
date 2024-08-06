@@ -1,4 +1,4 @@
-# Faça um Programa que peça dois números e imprima o maior deles.
+#Faça um Programa que leia três números e mostre o maior e o menor deles.
 
 continua_ou_para = True
 while continua_ou_para:
@@ -28,14 +28,30 @@ while continua_ou_para:
         except ValueError as error:
             print()
             print(error)
+
+    while True:
+        try:
+            print()
+            valor3 = float(input('Informe o segundo valor: '))
+
+            if valor3 is not None:
+                break
+            else:      
+                print('Numero incorreto, digite novamente')    
+        except ValueError as error:
+            print()
+            print(error)        
                 
 
-    if valor1 > valor2:
+    if valor1 > valor2 and valor1 > valor3:
         print()
-        print('O primeiro valor é maior que o segundo valor.')
-    elif valor2 > valor1:
+        print('O primeiro valor é o maior.')
+    elif valor2 > valor1 and valor2 > valor3:
         print()
-        print('O segundo valor é maior que o primeiro valor.')
+        print('O segundo valor é o maior.')
+    elif valor3 > valor1 and valor3 > valor2:
+        print()
+        print('O terceiro valor é o maior.')        
     else:
         print()
         print('Os valores são iguais.')    
@@ -53,4 +69,3 @@ while continua_ou_para:
             break
         else:
             print('Opção inválida. Por favor, digite [C] para continuar ou [S] para sair.')
-
